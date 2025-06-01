@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --border-color: rgb(0, 39, 65);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(rgb(236, 124, 124), rgb(45, 124, 191), rgb(136, 136, 136));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-image: linear-gradient(to right, rgba(161, 161, 255, 80%), whitesmoke 10px 98%, rgba(161, 161, 255, 80%));
+    width: 450px;
+    height: 600px;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.banner {
+    width: 450px;
+    height: 200px;
+    border-bottom: rgba(98, 98, 255, 50%) solid 3px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -8rem;
+    border: rgb(0, 39, 65) solid 3px;
+    align-items: center;
+}
+
+.nombre {
+    font-size: 30px;
+}
+
+.ubicacion {
+    margin-top: -15px;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(182, 123, 13);
+}
+
+.ubicacion::before {
+    content: "📍 ";
+    font-style: normal;
+}
+
+.descripcion {
+    font-size: large;
+    margin: 20px;
+}
+
+.btn {
+    margin: 38px;
+}
+
+a {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(71, 63, 179);
+    padding: 10px;
+    border: rgb(71, 63, 179) solid 2px;
+    border-radius: 15px;
+}
+
+a:hover {
+    background-color: rgb(34, 29, 94);
+    color: white;
+}
+
+footer {
+    border-top: var(--border-color) solid 1px;
+    display: flex;
+}
+
+.post {
+    border-right: var(--border-color) solid 1px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 35px 10px 35px;
+}
+
+.followers {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 0 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.following {
+    border-left: var(--border-color) solid 1px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
+.name {
+    color: rgb(83, 83, 83);
+    font-size: 12px;
+}
+
+.number {
+    font-size: 20px
+}
